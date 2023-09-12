@@ -1,0 +1,60 @@
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(80, 80, 212);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-form input {
+  height: 30px;
+  width: 270px;
+}
+
+.search-form button {
+  margin-left: 20px;
+  height: 30px;
+  width: 70px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  min-height: 100vh; /* Make the container at least full viewport height */
+}
+
+.gallery {
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 20px; /* Add margin around the gallery */
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Create a responsive grid layout */
+  gap: 20px; /* Add spacing between image cards */
+}
+
+.photo-card img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra spacing below inline images */
+  margin: 0 auto; /* Center-align the images */
+}
+
+.photo-card {
+  width: 300px; /* Adjust the width as needed */
+  margin: 10px; /* Add spacing between image cards */
+  display: inline-block; /* Display cards in a row */
+  vertical-align: top; /* Align cards to the top */
+}
+
+@media (max-width: 768px) {
+  .photo-card {
+    width: 100%; /* Full width on smaller screens */
+    margin: 10px 0; /* Remove horizontal spacing and add vertical spacing */
+  }
+}
