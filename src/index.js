@@ -2,7 +2,7 @@ import axios from 'axios';
 import notiflix from 'notiflix';
 import SimpleLightbox from 'simplelightbox';
    
-const apiKey = '39362728-e0fcbbafa7eca094901ef58bb'; 
+const apiKey = '39362728-e0fcbbafa7eca094901ef58bb';  
 const searchForm = document.getElementById('search-form'); 
 const gallery = document.querySelector('.gallery');
 const loadMoreBtn = document.querySelector('.load-more');
