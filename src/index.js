@@ -7,7 +7,7 @@ const searchForm = document.getElementById('search-form');
 const gallery = document.querySelector('.gallery'); 
 const loadMoreBtn = document.querySelector('.load-more'); 
  
-let currentPage = 1; 
+let currentPage = 1;  
 
 function renderImageCards(imageData) {
   const gallery = document.querySelector('.gallery');
