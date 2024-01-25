@@ -10,7 +10,7 @@ const loadMoreBtn = document.querySelector('.load-more');
 let currentPage = 1;  
 
 function renderImageCards(imageData) {
-  const gallery = document.querySelector('.gallery');
+  const gallery = document.querySelector('.gallery'); 
 
   imageData.forEach(image => {
     const photoCard = document.createElement('div');
