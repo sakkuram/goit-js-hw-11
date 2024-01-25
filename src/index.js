@@ -15,7 +15,7 @@ function renderImageCards(imageData) {
   imageData.forEach(image => {
     const photoCard = document.createElement('div');
     photoCard.classList.add('photo-card');
-
+ 
     // Create an anchor tag to wrap the image
     const anchor = document.createElement('a');
     anchor.href = image.largeImageURL; // Link to the large image
